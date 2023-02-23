@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Landing } from './components/landing/landing';
+import SideBar from './components/sidebar/sidebar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import JokeByCategory from './components/getJokeByCategory/getJokeByCategory';
+import GetJokeBySearch from './components/getJokeBySearch/getJokeBySearch';
+import JokeSearchError from './components/getJokeBySearch/jokeSearchError';
+import LikedJokes from './components/likedJokes/likedJokes';
+import DislikedJokes from './components/dislikedJokes/dislikedJokes';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <SideBar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/jokeByCategory/:category" element={<JokeByCategory />} />
+          <Route path="/search/empty" element={<JokeSearchError/>} />
+          <Route path ="/search/:searchQuery" element={<GetJokeBySearch />} />
+          <Route path ="/likedJokes" element={<LikedJokes />} />
+          <Route path ="/dislikedJokes" element={<DislikedJokes />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

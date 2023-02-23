@@ -1,0 +1,12 @@
+.jokeSearchError{
+    margin-left: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jokeSearchError h1{
+    color: red;
+    display: flex;
+    margin-left: 25px;
+}

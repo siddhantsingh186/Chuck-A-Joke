@@ -1,0 +1,39 @@
+.sideBar{
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
+
+.searchBar{
+    display: flex;
+    margin-left: 32px;
+}
+.searchIcon {
+    background-color: royalblue;
+    color: white;
+    padding: -4px;
+    height: 43px;
+    width: 43px;
+    border-radius: 6px;
+    margin-top: 172px;
+    margin-left: 9px;
+}
+
+.searchIcon :hover{
+    cursor: pointer;
+}
+
+.sidebarButtons{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-left: 75px;
+    row-gap: 25px;
+}
