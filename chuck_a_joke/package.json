@@ -1,6 +1,5 @@
 {
   "name": "chuck_a_joke",
-  "homepage": "https://chuck-a-joke-6wmqcjsa8-siddhantsingh186.vercel.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
