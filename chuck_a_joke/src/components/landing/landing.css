@@ -1,0 +1,40 @@
+.landing_image{
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    margin-top: 60px;
+}
+.landingPage{
+    margin-left: 320px;
+    margin-bottom: 50px;
+}
+
+#header{
+    margin-top: 60px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.displayJoke{
+    font-family: monospace;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 25px;
+}
+
+.displayButtons{
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.displayButtons button{
+    padding-left: 20px;
+    padding-right: 20px;
+}

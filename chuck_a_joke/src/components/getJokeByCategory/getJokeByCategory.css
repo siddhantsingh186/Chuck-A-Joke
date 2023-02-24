@@ -1,0 +1,13 @@
+.jokeByCategory{
+    margin-left: 320px;
+    margin-top: 121px;
+}
+
+.joke{
+    font-family: monospace;
+    font-size: 26px;
+}
+
+.displayButtons{
+    margin-top: 31px;
+}
