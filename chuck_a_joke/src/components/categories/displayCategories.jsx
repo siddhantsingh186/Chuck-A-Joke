@@ -26,11 +26,12 @@ const DisplayCategories = () => {
                 <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                         <strong>
-                            <ul>
+                            <ul style={{listStyleType: 'none'}}
+>
                                 {categories === null ? null : categories.map((category,index) => {
                                     return (
                                         <li key = {index}>
-                                            <Link to = {`/jokeByCategory/${category}`}>{category}</Link>
+                                            <Link to = {`/jokeByCategory/${category}`} style = {{textDecorationLine: "none"}}>{category}</Link>
                                         </li>
                                     )
                                 })}

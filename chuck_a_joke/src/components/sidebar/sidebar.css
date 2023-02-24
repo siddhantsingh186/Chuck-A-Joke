@@ -8,11 +8,16 @@
     padding: 20px 0;
     transition: all 0.5s ease;
     box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    overflow-y: scroll;
 }
 
 .searchBar{
     display: flex;
     margin-left: 32px;
+}
+
+.homeIcon{
+    margin-top: 124px;
 }
 .searchIcon {
     background-color: royalblue;
@@ -21,7 +26,7 @@
     height: 43px;
     width: 43px;
     border-radius: 6px;
-    margin-top: 172px;
+    margin-top: 78px;
     margin-left: 9px;
 }
 

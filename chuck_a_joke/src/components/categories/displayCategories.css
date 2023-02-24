@@ -1,3 +1,9 @@
 .displayCategories{
     margin-top: 47px;
 }
+
+.displayCategories li {
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: larger;
+}

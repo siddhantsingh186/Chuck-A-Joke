@@ -1,9 +1,10 @@
 .landing_image{
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
-    margin-top: 100px;
+    margin-top: 60px;
 }
 .landingPage{
     margin-left: 320px;
+    margin-bottom: 50px;
 }
 
 #header{
@@ -18,7 +19,7 @@
 
 .displayJoke{
     font-family: monospace;
-    font-size: 20px;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;

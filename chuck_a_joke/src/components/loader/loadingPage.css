@@ -1,0 +1,11 @@
+.loadingPage{
+    display: flex;
+    margin-left: 320px;
+    justify-content: space-evenly;
+    margin-top: 381px;
+}
+
+.loadingPage strong{
+    font-size: 39px;
+    font-family: monospace;
+}
