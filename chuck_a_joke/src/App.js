@@ -11,24 +11,28 @@ import { Provider } from 'react-redux';
 import store from './redux/store';
 import SearchHistory from './components/searchHistory/searchHistory';
 import Error404 from './components/error/Error404';
+import { PersistGate } from 'redux-persist/integration/react';
+import { persistor } from './redux/store';
 function App() {
   return (
     <Provider store={store}>
-    <Router>
-      <div className="App">
-        <SideBar />
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/jokeByCategory/:category" element={<JokeByCategory />} />
-          <Route path="/search/empty" element={<JokeSearchError/>} />
-          <Route path ="/search/:searchQuery" element={<GetJokeBySearch />} />
-          <Route path ="/likedJokes" element={<LikedJokes />} />
-          <Route path ="/dislikedJokes" element={<DislikedJokes />} />
-          <Route path ="/history" element={<SearchHistory/>} />
-          <Route path="*" element={<Error404/>} />
-        </Routes>
-      </div>
-    </Router>
+      <PersistGate loading={null} persistor={persistor}>
+        <Router>
+          <div className="App">
+            <SideBar />
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/jokeByCategory/:category" element={<JokeByCategory />} />
+              <Route path="/search/empty" element={<JokeSearchError/>} />
+              <Route path ="/search/:searchQuery" element={<GetJokeBySearch />} />
+              <Route path ="/likedJokes" element={<LikedJokes />} />
+              <Route path ="/dislikedJokes" element={<DislikedJokes />} />
+              <Route path ="/history" element={<SearchHistory/>} />
+              <Route path="*" element={<Error404/>} />
+            </Routes>
+          </div>
+        </Router>
+      </PersistGate>
     </Provider>
   );
 }
